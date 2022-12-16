@@ -18,18 +18,37 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+lang: en
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
 title: Silicos-IT
-email: hans@silicos-it.be
-email: hans.dewinter@uantwerpen.be
+tagline: Computational drug design at your fingertips   # it will display as the sub-title
 description: >- # this means to ignore newlines until "baseurl:"
+Computational drug design services such as molecular dynamics, pharmacophore modeling,
+chemo-informatics.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  silicos-it
+
+social:
+  name: Hans De Winter
+  email:
+    - hans@silicos-it.be
+    - hans.dewinter@uantwerpen.be
+  links:
+    - { platform: github,   user_url: "https://github.com/silicos-it" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/company/silicos-it/about/" }
 
 # Build settings
 theme: minima
+skin: dark
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
+# Header pages
+header_pages:
+- about.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
