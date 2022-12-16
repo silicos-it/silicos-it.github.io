@@ -3,9 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: "Home"
 ---
-# Silicos-it
-
 **Silicos-it** is a Belgian consultancy company that was founded in 2010 and that is specialised in **computational drug design**. We provide support in all aspects of modern computational drug design, including **virtual screening**, **molecular dynamics applications**, and state-of-the-art **structure-activity machine learning models**. In addition, we are also involved in writing **open source** `software tools <software>`.
 
 Since 2013, a strong relation with the **University of Antwerp (UA)** was established. Because of this, we can provide you with a complete set of solutions to all your questions related to **computational drug design**. This may include **service work** under the wings of the UA, submission and execution of a **VLAIO project** with the UA as academic partner, or some well-defined **fee-for-service** projects with **Silicos-it** as the commercial partner. And due to our link with the UA, we have access to the university's extremely powerful **Tier-2 supercomputer** on which we can run your extensive computer simulations.
