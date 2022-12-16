@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: "Home"
+title: Home
 ---
 **Silicos-it** is a Belgian consultancy company that was founded in 2010 and that is specialised in **computational drug design**. We provide support in all aspects of modern computational drug design, including **virtual screening**, **molecular dynamics applications**, and state-of-the-art **structure-activity machine learning models**. In addition, we are also involved in writing **open source** `software tools <software>`.
 
