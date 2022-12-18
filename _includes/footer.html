@@ -8,14 +8,15 @@
         <p class="feed-subscribe" style="float:left;">
           <a href="{{ 'feed.xml' | relative_url }}">
             <img src="/assets/rss-icon.svg" width="20px" height="20px"> 
-            </img>&nbsp;
+            </img>
             <span>Subscribe</span>
           </a>
         </p>
 
-        <p class="contact-list" style="float:right;">
-            Contact and copyright {{ site.copyright | escape }}: <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">{{ site.social.name | escape }}</a>
-        </p>
+        <p class="contact-list" style="float:right; text-align:right;">
+            Contact and copyright {{ site.copyright | escape }} <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">{{ site.social.name | escape }}</a>
+            <br>Last update on {% last_modified_at %}
+          </p>
 
       </div>
     </div>
