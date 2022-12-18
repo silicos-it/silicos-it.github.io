@@ -55,8 +55,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-last-modified-at
 
-last-modified-at:
-  date-format: '%d-%b-%y'
 
 # Header pages
 header_pages:
