@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "A QM/MM study on the reaction mechanism of *Staphylococcus Aureus* monoglycosyltransferase"
+title: "A QM/MM study on the reaction mechanism of Staphylococcus Aureus monoglycosyltransferase"
 categories: papers
 ---
 
