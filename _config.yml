@@ -1,10 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
@@ -13,6 +6,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 # Site settings
+
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
@@ -20,13 +14,20 @@
 
 lang: en
 
+author:
+  name: Hans De Winter
+  email:
+    - hans.dewinter
+
 show_excerpts: false # set to true to show excerpts on the homepage
 
-title: Silicos-IT
+title: Silicos-it
 tagline: Computational drug design at your fingertips   # it will display as the sub-title
 description: >- # this means to ignore newlines until "baseurl:"
-Computational drug design services such as molecular dynamics, pharmacophore modeling,
-chemo-informatics.
+  Computational drug design services such as molecular dynamics, pharmacophore modeling, 
+  chemo-informatics.
+copyright: © 2010-2022
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -41,14 +42,34 @@ social:
 
 # Build settings
 theme: minima
-skin: dark
+minima:
+  skin: auto
+  social_links:
+    - { platform: github,   user_url: "https://github.com/silicos-it" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/company/silicos-it/about/" }
+  date_format: "%b %-d, %Y"
+   
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
 # Header pages
 header_pages:
-- about.md
+- who_are_we.md
+- services.md
+- software.md
+- posts.md
+
+# Blog posts
+show_excerpts: true
+#paginate: 5
+#paginate_path: "/blogs/page:num/"
+#plugins:
+#  - jekyll-paginate
+#  - jekyll-feed
+#  - jekyll-sitemap
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

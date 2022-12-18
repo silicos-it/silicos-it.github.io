@@ -1,0 +1,37 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper" style="clear:both;">
+      <div class="footer-col" style="clear:both;">
+        <p class="feed-subscribe" style="float:left;">
+          <a href="{{ 'feed.xml' | relative_url }}">
+            <img src="/assets/rss-icon.svg" width="20px" height="20px"> 
+            </img>&nbsp;
+            <span>Subscribe</span>
+          </a>
+        </p>
+
+        <p class="contact-list" style="float:right;">
+            Contact and copyright {{ site.copyright | escape }}: <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">{{ site.social.name | escape }}</a>
+        </p>
+
+      </div>
+    </div>
+  
+<!---
+      </div>
+      <div class="footer-col">
+        <p>{{ site.copyright | escape }}</p>
+      </div>
+    </div>
+--->
+
+    <div class="social-links">
+      {%- include social.html -%}
+    </div>
+
+  </div>
+
+</footer>
