@@ -19,6 +19,8 @@ author:
   email:
     - hans.dewinter
 
+google_analytics: true
+
 show_excerpts: false # set to true to show excerpts on the homepage
 
 title: Silicos-it
