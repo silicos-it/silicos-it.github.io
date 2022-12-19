@@ -21,7 +21,7 @@ $lm-code-background-color: #eeeeff !default;
 
 $lm-link-base-color:       #2a7ae2 !default;
 $lm-link-visited-color:    darken($lm-link-base-color, 15%) !default;
-$lm-link-hover-color:      $lm-text-color !default;
+$lm-link-hover-color:      darken($lm-link-base-color, 45%) !default;
 
 $lm-border-color-01:       $lm-brand-color-light !default;
 $lm-border-color-02:       lighten($lm-brand-color, 35%) !default;
@@ -117,7 +117,7 @@ $dm-code-background-color: #212121 !default;
 
 $dm-link-base-color:       #79b8ff !default;
 $dm-link-visited-color:    $dm-link-base-color !default;
-$dm-link-hover-color:      $dm-text-color !default;
+$dm-link-hover-color:      darken($dm-link-base-color, 15%) !default;
 
 $dm-border-color-01:       $dm-brand-color-dark !default;
 $dm-border-color-02:       $dm-brand-color-light !default;
