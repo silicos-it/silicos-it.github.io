@@ -10,4 +10,4 @@ Bacterial glycosyltransferases of the GT51 family are key enzymes in bacterial c
 
 Many thanks to Kenneth Goossens, Rui Neves and Pedro Fernandes for the nice work!
 
-<a href="/assets/papers/kg-qmmm-paper.pdf" download target="_blank"><i>J. Chem. Inf. Model.</i> (2020), <b>60</b>, 5513-5528</a>
+<a href="/assets/papers/kg-qmmm-paper.pdf" download><i>J. Chem. Inf. Model.</i> (2020), <b>60</b>, 5513-5528</a>

@@ -10,4 +10,4 @@ The pro-inflammatory cytokine thymic stromal lymphopoietin (TSLP) plays a pivota
 
 Many thanks to Dries Van Rompaey for the nice work!
 
-<a href="/assets/papers/dvr-tslp-tslpr-vs-paper.pdf" download target="_blank"><i>Sci. Rep.</i> (2017), <b>7</b>, 17211</a>
+<a href="/assets/papers/dvr-tslp-tslpr-vs-paper.pdf" download><i>Sci. Rep.</i> (2017), <b>7</b>, 17211</a>

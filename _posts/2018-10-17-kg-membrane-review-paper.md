@@ -10,4 +10,4 @@ Simulations of membrane proteins have been rising in popularity in the past deca
 
 Many thanks to Kenneth Goossens for the nice work!
 
-<a href="/assets/papers/kg-membrane-review-paper.pdf" download target="_blank"><i>J. Chem. Inf. Model.</i> (2018), <b>58</b>, 2193-2202</a>
+<a href="/assets/papers/kg-membrane-review-paper.pdf" download><i>J. Chem. Inf. Model.</i> (2018), <b>58</b>, 2193-2202</a>

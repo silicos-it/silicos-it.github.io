@@ -10,4 +10,4 @@ SEED has been evaluated with a focus on enrichment and hit rate. It is shown tha
 
 Many thanks to Kenneth Goossens for the nice work!
 
-<a href="/assets/papers/kg-seed-paper.pdf" download target="_blank"><i>J. Chem. Inf. Model.</i> (2020), <b>60</b>, 4881-4893</a>
+<a href="/assets/papers/kg-seed-paper.pdf" download><i>J. Chem. Inf. Model.</i> (2020), <b>60</b>, 4881-4893</a>

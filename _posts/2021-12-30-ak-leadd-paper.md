@@ -10,4 +10,4 @@ LEADD attempts to strike a balance between optimization power, synthetic accessi
 
 Many thanks to Alan Kerstjens for the nice work!
 
-<a href="/assets/papers/ak-leadd-paper.pdf" download target="_blank"><i>J. Cheminform.</i> (2022), <b>14</b>, 3</a>
+<a href="/assets/papers/ak-leadd-paper.pdf" download><i>J. Cheminform.</i> (2022), <b>14</b>, 3</a>
