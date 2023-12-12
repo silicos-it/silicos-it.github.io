@@ -21,6 +21,6 @@ All of our internally developed software tools have been made open source and ar
 <a href="https://github.com/UAMCAntwerpen/LEADD" target="_blank">LEADD</a> stands for Lamarckian Evolutionary Algorithm for de novo Drug Design. LEADD designs molecules as combinations of molecular fragments, bonded according to the topology of a graph. Atom pair compatibility rules are enforced by a novel set of genetic operators, biased according to the frequency of the fragments in drug-like matter. A Lamarckian evolutionary mechanism adjusts the future reproductive behavior of molecules based on the outcome of previous generations. LEADD attempts to strike a balance between optimization power, synthetic accessibility and computational performance. The method has been described in <a href="/assets/papers/ak-leadd-paper.pdf" download target="_blank"><i>J. Cheminform.</i> (2022) <b>14</b>, 3</a>.
 
 
-### QED
+### MolPert
 
-<a href="https://github.com/silicos-it/qed" target="_blank">QED</a> stands for Quantitative Estimation of Drug-likeness. The concept has originally been introduced by <a href="https://www.nature.com/articles/nchem.1243" target="_blank">Richard Bickerton and coworkers</a>. This Python module relies on <a href="https://greglandrum.github.io/rdkit-blog/" target="_blank">RDKit</a> as a chemoinformatics toolkit.
+<a href="https://github.com/UAMCAntwerpen/Molpert" target="_blank">MolPert</a> is a software library for constrained graph-based molecule manipulation. The method has been described in <a href="/assets/papers/ak-molpert-paper.pdf" download target="_blank"><i>J. Cheminform.</i> (2023) <b>15</b>, 89</a>
