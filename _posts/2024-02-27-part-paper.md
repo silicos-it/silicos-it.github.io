@@ -1,0 +1,11 @@
+---
+layout: article
+title: "Preventing lipophilic aggregation in cosolvent molecular dynamics simulations with hydrophobic probes using Plumed Automatic Restraining Tool (PART)"
+categories: papers
+---
+
+Cosolvent molecular dynamics simulations are molecular dynamics simulations used to identify preferable locations of small organic fragments on a protein target. Most cosolvent molecular dynamics workflows make use of only water-soluble fragments, as hydrophobic fragments would cause lipophilic aggregation. To date the two approaches that allow usage of hydrophobic cosolvent molecules are to use a low concentration of hydrophobic probes, with the disadvantage of a lower sampling speed, or to use force field modifications, with the disadvantage of a difficult and inflexible setup procedure. In this new paper we present a new alternative, that does not suffer from low sampling speed nor from cumbersome preparation procedures. We have built an easy-to-use open source command line tool PART (Plumed Automatic Restraining Tool) to generate a PLUMED file handling all intermolecular restraints to prevent lipophilic aggregation. We have compared restrained and unrestrained cosolvent MD simulations, showing that restraints are necessary to prevent lipophilic aggregation at hydrophobic probe concentrations of 0.5 M. Furthermore, we benchmarked PART generated restraints on a test set of four proteins (Factor-Xa, HIV protease, P38 MAP kinase and RNase A), showing that cosolvent MD with PART generated restraints qualitatively reproduces binding features of cocrystallised ligands.
+
+Olivier Beyens did a nice job on this one! The <a href="https://github.com/UAMCAntwerpen/PART" target="_blank">software is available from the UAMC Github page</a>.
+
+<a href="/assets/papers/part-paper.pdf" download><i>J. Cheminformatics</i> (2024), <b>16</b>, 23</a>
