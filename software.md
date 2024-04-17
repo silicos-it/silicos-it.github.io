@@ -23,4 +23,9 @@ All of our internally developed software tools have been made open source and ar
 
 ### MolPert
 
-<a href="https://github.com/UAMCAntwerpen/Molpert" target="_blank">MolPert</a> is a software library for constrained graph-based molecule manipulation. The method has been described in <a href="/assets/papers/ak-molpert-paper.pdf" download target="_blank"><i>J. Cheminform.</i> (2023) <b>15</b>, 89</a>
+<a href="https://github.com/UAMCAntwerpen/Molpert" target="_blank">MolPert</a> is a software library for constrained graph-based molecule manipulation. The method has been described in <a href="/assets/papers/ak-molpert-paper.pdf" download target="_blank"><i>J. Cheminform.</i> (2023) <b>15</b>, 89</a>.
+
+
+### MoleculeAutoCorrect
+
+<a href="https://github.com/UAMCAntwerpen/MoleculeAutoCorrect" target="_blank">MoleculeAutoCorrect</a> is a spell checker for your molecular graphs. A virtual library of reference correct molecules is used to build a dictionary of allowed chemical features. The chemical features of input molecules are compared against this dictionary. If any invalid features are present the molecule is modified in a controlled way to find a closely related valid molecule. The method has been described in <a href="/assets/papers/autocorrect-paper.pdf" download target="_blank"><i>J. Comput. Aided Mol. Des.</i> (2024) <b>38</b>, 10</a>.
