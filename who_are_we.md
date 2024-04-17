@@ -15,7 +15,7 @@ Around 2010, **Silicos-it** was established by Hans to further develop the softw
 
 ### University of Antwerp
 
-In 2013, Hans became appointed as professor in <a href="https://uamcantwerpen.github.io/2040FBDBIC/" target="_blank">cheminformatics and computational drug design</a> at the University of Antwerp (UA). This marked the start of a close relation between **Silicos-it** and the UA. New [software tools](/software) were developed and **Silicos-it** now has additional solutions to offer that was not possible before. For example, we can discuss government-funded collaborations, or we can engage on projects that involve massive simulations on exascale supercomputers.
+In 2013, Hans became appointed as professor in <a href="https://uamcantwerpen.github.io/2040FBDBIC/" target="_blank">cheminformatics and computational drug design</a> at the University of Antwerp (UA). This marked the start of a close relation between **Silicos-it** and the UA. New [software tools](/software) were developed and **Silicos-it** now has additional solutions to offer that were not possible before. For example, we can discuss government-funded collaborations, or we can engage on projects that involve massive simulations on exascale supercomputers.
 
 
 ### Many possibilities
