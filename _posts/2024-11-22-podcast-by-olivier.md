@@ -6,7 +6,4 @@ categories: jobs
 
 Ever wanted to know what cosolvent molecular dynamics simulations are and how they can help you in your drug design challenges? Then list to this
 <a href="https://open.spotify.com/episode/5s4FSqbFAKJBEGVpwi93Gd">podcast by former PhD student Olivier Beyens</a>. He nicely explains what it means, 
-and touches upon the pros and cons of the technique. In the same field we have an <a href="https://www.imec-int.com/en/work-at-imec/job-opportunities/cosolvent-molecular-dynamics-simulations-drug-discovery">open PhD position</a> in collaboration with IMEC. Application deadline closes on December 15, 2024.
-
-Test
-<iframe src="https://open.spotify.com/episode/5s4FSqbFAKJBEGVpwi93Gd" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media" data-external="1"></iframe>
+and touches upon the pros and cons of the technique. In the same field we have an <a href="https://www.imec-int.com/en/work-at-imec/job-opportunities/cosolvent-molecular-dynamics-simulations-drug-discovery">open PhD position</a> in collaboration with IMEC. Application deadline is December 15, 2024.
