@@ -4,3 +4,14 @@
   1. Head over to https://realfavicongenerator.net/ to add your own favicons.
   2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
 {% endcomment %}
+
+{%- if site.google_analytics and site.google_analytics != "" and site.google_analytics != true -%}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+{%- endif -%}

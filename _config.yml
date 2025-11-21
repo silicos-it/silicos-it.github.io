@@ -17,11 +17,10 @@ lang: en
 author:
   name: Hans De Winter
   email:
-    - hans.dewinter
+    - hans@silicos-it.be
+    - hans.dewinter@uantwerpen.be
 
-google_analytics: true
-
-show_excerpts: false # set to true to show excerpts on the homepage
+google_analytics: G-LS6PZHT6LV  # Replace with your Google Analytics 4 Measurement ID
 
 title: Silicos-it
 tagline: Computational drug design at your fingertips   # it will display as the sub-title
@@ -31,7 +30,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 copyright: © 2010-2025
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.silicos-it.be" # the base hostname & protocol for your site, e.g. http://example.com
 
 social:
   name: Hans De Winter
