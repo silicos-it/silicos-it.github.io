@@ -1,2 +1,135 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+/* Modern drop-in overrides for Minima */
+
+/* Base typography + layout */
+html {
+    font-size: 17px;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #1b1f23;
+    line-height: 1.65;
+    background: #f7f9fb;
+  }
+  
+  /* Content container breathing room */
+  .wrapper {
+    max-width: 980px;
+    padding: 0 24px;
+  }
+  
+  .page-content {
+    padding: 40px 0 64px;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.015em;
+    color: #111418;
+  }
+  
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.7rem; margin-top: 2.2rem; }
+  h3 { font-size: 1.35rem; margin-top: 1.6rem; }
+  
+  /* Links */
+  a {
+    color: #2563eb;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: color 150ms ease, background-size 200ms ease;
+  }
+  
+  a:hover,
+  a:focus {
+    color: #1d4ed8;
+    background-size: 100% 2px;
+  }
+  
+  /* Header polish */
+  .site-header {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #e6e9ef;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  }
+  
+  .site-title {
+    font-weight: 600;
+  }
+  
+  /* Post lists as cards */
+  .post-list > li {
+    background: #fff;
+    border: 1px solid #e6e9ef;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 0 0 18px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+    transition: transform 150ms ease, box-shadow 200ms ease;
+  }
+  
+  .post-list > li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  }
+  
+  /* Post content */
+  .post-content p {
+    margin-bottom: 1.1rem;
+  }
+  
+  .post-meta {
+    color: #6b7280;
+  }
+  
+  /* Images and media */
+  img, video, iframe {
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+  }
+  
+  /* Code blocks */
+  pre, code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+  }
+  
+  pre {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 12px;
+    padding: 16px;
+    overflow: auto;
+  }
+  
+  /* Buttons (if any) */
+  .button, .btn {
+    display: inline-block;
+    background: #2563eb;
+    color: #fff;
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-weight: 600;
+    transition: background 150ms ease, transform 150ms ease;
+  }
+  
+  .button:hover, .btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+  }
+  
+  /* Footer polish */
+  .site-footer {
+    border-top: 1px solid #e6e9ef;
+    color: #6b7280;
+    padding: 28px 0 40px;
+  }
+  
