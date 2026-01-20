@@ -41,8 +41,8 @@ html {
   a {
     color: #2563eb;
     text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-size: 0% 2px;
+    background-image: linear-gradient(rgba(37, 99, 235, 0.35), rgba(37, 99, 235, 0.35));
+    background-size: 0% 1px;
     background-position: 0 100%;
     background-repeat: no-repeat;
     transition: color 150ms ease, background-size 200ms ease;
@@ -50,8 +50,8 @@ html {
   
   a:hover,
   a:focus {
-    color: #1d4ed8;
-    background-size: 100% 2px;
+    color: #1f4ed8;
+    background-size: 65% 1px;
   }
   
   /* Header polish */
