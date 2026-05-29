@@ -109,12 +109,15 @@ a:focus {
   background: var(--header-bg);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  border-top: none;
   border-bottom: 1px solid var(--border);
   box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
   position: sticky;
   top: 0;
   z-index: 100;
   overflow: hidden;
+  line-height: 1.2;
+  min-height: auto;
 }
 
 .site-header::before {
@@ -130,12 +133,18 @@ a:focus {
 .site-header .wrapper {
   position: relative;
   padding: 14px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .site-title {
+  float: none;
   font-weight: 600;
   font-size: 1.35rem;
   letter-spacing: -0.01em;
+  line-height: 1.2;
   padding: 6px 12px;
   border-radius: 8px;
   background: var(--surface-muted);
@@ -148,8 +157,13 @@ a:focus {
 }
 
 .site-nav {
+  position: static;
+  float: none;
+  top: auto;
+  right: auto;
   background-color: var(--surface);
   border-color: var(--border);
+  line-height: 1.2;
 }
 
 .site-nav .page-link {
@@ -176,6 +190,15 @@ a:focus {
     display: flex;
     gap: 4px;
     align-items: center;
+  }
+
+  .site-nav .page-link {
+    display: inline-block;
+    margin-left: 0;
+  }
+
+  .site-nav .page-link:not(:last-child) {
+    margin-right: 0;
   }
 }
 

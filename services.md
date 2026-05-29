@@ -14,7 +14,7 @@ projects. Our specialisation focus lies in four domains:
 Have a look at the following examples and feel free to <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">contact us</a> for your particular projects.
 
 <div class="section-card section-card--media">
-<div class="section-card__body">
+<div class="section-card__body" markdown="1">
 
 ### Binding pocket identification
 
@@ -26,7 +26,7 @@ You have a therapeutic target and a ligand, but you don't know where the ligand 
 </div>
 
 <div class="section-card section-card--media">
-<div class="section-card__body">
+<div class="section-card__body" markdown="1">
 
 ### Structure-based ligand design
 
@@ -38,7 +38,7 @@ Want to optimise a compound using computational methods? Free energy perturbatio
 </div>
 
 <div class="section-card section-card--media">
-<div class="section-card__body">
+<div class="section-card__body" markdown="1">
 
 ### Virtual screening
 
@@ -50,7 +50,7 @@ Often the fastest way to kickstart a drug design project is to identify compound
 </div>
 
 <div class="section-card">
-<div class="section-card__body">
+<div class="section-card__body" markdown="1">
 
 ### Building QSAR models
 
