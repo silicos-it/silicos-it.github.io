@@ -8,7 +8,7 @@ All of our internally developed software tools have been made open source and ar
 
 ### PyPharao
 
-<a href="https://github.com/silicos-it/pypharao" target="_blank">PyPharao</a>is a Python library for 3D pharmacophore representation and screening, implementing the Pharao Gaussian volume-alignment method with RDKit-based feature perception from molecules.
+<a href="https://github.com/silicos-it/pypharao" target="_blank">PyPharao</a> is a Python library for 3D pharmacophore representation and screening, implementing the Pharao Gaussian volume-alignment method with RDKit-based feature perception from molecules.
 It lets you build query pharmacophores, align them to database structures, and score hits with Tanimoto/Tversky metrics, including support for exclusion volumes and directional aromatic features. You can easily install with this one-liner:
 
 ```sh

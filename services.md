@@ -13,30 +13,48 @@ projects. Our specialisation focus lies in four domains:
 
 Have a look at the following examples and feel free to <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">contact us</a> for your particular projects.
 
+<div class="section-card section-card--media">
+<div class="section-card__body">
+
 ### Binding pocket identification
 
 You have a therapeutic target and a ligand, but you don't know where the ligand is binding on the target? Enhanced sampling dynamics might provide you with a useful solution. In this particular example below, Gaussian accelerated MD was used to identify putative binding spots of a ligand on a protein, taking into account full protein flexibility and solvent effects. Other methods are also possible, but all depends on your particular question. <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">Let's talk about it!</a>
 
+</div>
 <video src="/assets/movies/pocket-360x240.mp4" width=360 height=240 controls="" autoplay loop preload name="pocket">
 </video>
+</div>
 
+<div class="section-card section-card--media">
+<div class="section-card__body">
 
 ### Structure-based ligand design
 
 Want to optimise a compound using computational methods? Free energy perturbation dynamics or umbrella sampling could help you with that. In the example below, the blue compound is pulled out of the protease protein of SARS-CoV-2, and the forces that are needed to achieve this are a measure of how strong the compound is binding. Or do you have a dimeric protein and you want to find out how strong the complex is? <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">We can help you with that!</a>
 
-  <video src="/assets/movies/umbrella-360x240.mp4" width=360 height=240 controls="" autoplay loop preload name="umbrella">
-  </video>
+</div>
+<video src="/assets/movies/umbrella-360x240.mp4" width=360 height=240 controls="" autoplay loop preload name="umbrella">
+</video>
+</div>
 
+<div class="section-card section-card--media">
+<div class="section-card__body">
 
 ### Virtual screening
 
 Often the fastest way to kickstart a drug design project is to identify compounds that are similar to your lead molecule. This method is called virtual screening and we can help you with our <a href="/assets/papers/hdw-pharao-paper.pdf" download target="_blank">Pharao</a> software or open source software tools like AutoDock or Vina. All depends on the information that is available. <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">You can rely on our expertise for advise.</a>
 
-  <video src="/assets/movies/pharao-360x240.mp4" width=360 height=240 controls="" autoplay loop preload name="pharao">
-  </video>
+</div>
+<video src="/assets/movies/pharao-360x240.mp4" width=360 height=240 controls="" autoplay loop preload name="pharao">
+</video>
+</div>
 
+<div class="section-card">
+<div class="section-card__body">
 
 ### Building QSAR models
 
 You have huge molecular datasets with relevant pharmacological or physicochemical properties, and you want to build a validated and predictive model from this? <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">Let's sit together and discuss how we can help you in achieving this</a>.
+
+</div>
+</div>

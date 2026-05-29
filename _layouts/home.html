@@ -3,11 +3,22 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  <section class="hero">
+    {%- if page.title -%}
+      <h1 class="page-heading">{{ page.title }}</h1>
+    {%- endif -%}
+    {%- if site.tagline -%}
+      <p class="hero-tagline">{{ site.tagline }}</p>
+    {%- endif -%}
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ '/services' | relative_url }}">View services</a>
+      <a class="btn btn-secondary u-email" href="mailto:{{ site.social.email | join:',' }}">Contact us</a>
+    </div>
+  </section>
 
-  {{ content }}
+  <div class="content-card home-intro">
+    {{ content }}
+  </div>
 
 
   {% if site.paginate %}
@@ -17,7 +28,6 @@ layout: default
   {% endif %}
 
   {%- if posts.size > 0 -%}
-  <br>
     <h2>Our latest post</h2>
     <ul class="post-list">
       {%- for post in posts limit:1 -%}
