@@ -180,17 +180,26 @@ a:focus {
 }
 
 /* Hero (homepage) */
-.hero {
+.home .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 2rem 0 2.5rem;
   margin-bottom: 1.5rem;
 }
 
-.hero .page-heading {
+.home .hero .page-heading,
+.home .hero .hero-tagline {
+  text-align: center;
+  width: 100%;
+}
+
+.home .hero .page-heading {
   margin-bottom: 0.75rem;
 }
 
-.hero-tagline {
+.home .hero .hero-tagline {
   font-size: 1.2rem;
   color: var(--text-muted);
   max-width: 36rem;
@@ -198,11 +207,13 @@ a:focus {
   line-height: 1.5;
 }
 
-.hero-actions {
+.home .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /* Buttons */
