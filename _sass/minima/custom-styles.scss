@@ -17,6 +17,9 @@
   --header-gradient-2: rgba(6, 182, 212, 0.1);
   --shadow-sm: 0 6px 18px rgba(15, 23, 42, 0.05);
   --shadow-md: 0 10px 24px rgba(15, 23, 42, 0.08);
+  --minima-link-base-color: var(--accent);
+  --minima-link-visited-color: var(--accent-hover);
+  --minima-link-hover-color: var(--accent-hover);
   --code-bg: #f1f5f9;
   --pre-bg: #0f172a;
   --pre-text: #e2e8f0;
@@ -89,8 +92,9 @@ h3 {
   margin-top: 1.6rem;
 }
 
-/* Links */
-a {
+/* Links — teal for all states (overrides Minima blue :visited) */
+a:link,
+a:visited {
   color: var(--accent);
   text-decoration: none;
   background-color: transparent;
@@ -101,6 +105,10 @@ a {
 a:hover,
 a:focus {
   color: var(--accent-hover);
+}
+
+a:not(.btn):hover,
+a:not(.btn):focus {
   background-color: var(--accent-subtle);
 }
 
@@ -139,21 +147,38 @@ a:focus {
   gap: 1rem;
 }
 
-.site-title {
-  float: none;
-  font-weight: 600;
-  font-size: 1.35rem;
-  letter-spacing: -0.01em;
+.site-title,
+.site-nav .page-link {
+  font-size: 1rem;
+  font-weight: 500;
   line-height: 1.2;
   padding: 6px 12px;
   border-radius: 8px;
   background: var(--surface-muted);
-  transition: background-color 150ms ease;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.site-nav .page-link,
+.site-nav .page-link:visited {
+  color: var(--text);
+}
+
+.site-title {
+  float: none;
+  letter-spacing: -0.01em;
+  color: var(--text-heading);
+}
+
+.site-title:visited {
+  color: var(--text-heading);
 }
 
 .site-title:hover,
-.site-title:focus {
+.site-title:focus,
+.site-nav .page-link:hover,
+.site-nav .page-link:focus {
   background-color: var(--accent-subtle);
+  color: var(--accent);
 }
 
 .site-nav {
@@ -166,20 +191,9 @@ a:focus {
   line-height: 1.2;
 }
 
-.site-nav .page-link {
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: background-color 150ms ease, color 150ms ease;
-}
 
-.site-nav .page-link:hover,
-.site-nav .page-link:focus {
-  background-color: var(--accent-subtle);
-  color: var(--accent);
-}
-
-.site-nav .page-link[aria-current="page"] {
+.site-nav .page-link[aria-current="page"],
+.site-nav .page-link[aria-current="page"]:visited {
   background-color: var(--accent-subtle);
   color: var(--accent);
   font-weight: 600;
@@ -251,7 +265,11 @@ a:focus {
 }
 
 .btn-primary,
-.button {
+.button,
+a.btn-primary,
+a.btn-primary:visited,
+a.button,
+a.button:visited {
   background: var(--accent);
   color: #fff;
 }
@@ -259,29 +277,43 @@ a:focus {
 .btn-primary:hover,
 .btn-primary:focus,
 .button:hover,
-.button:focus {
+.button:focus,
+a.btn-primary:hover,
+a.btn-primary:focus,
+a.btn-primary:visited:hover,
+a.button:hover,
+a.button:focus,
+a.button:visited:hover {
   background: var(--accent-hover);
   color: #fff;
   transform: translateY(-1px);
   box-shadow: var(--shadow-sm);
 }
 
-.btn-secondary {
+.btn-secondary,
+a.btn-secondary,
+a.btn-secondary:visited {
   background: var(--surface);
   color: var(--accent);
   border: 1px solid var(--border);
 }
 
 .btn-secondary:hover,
-.btn-secondary:focus {
+.btn-secondary:focus,
+a.btn-secondary:hover,
+a.btn-secondary:focus,
+a.btn-secondary:visited:hover {
   background: var(--accent-subtle);
   color: var(--accent-hover);
   border-color: var(--accent);
   transform: translateY(-1px);
 }
 
+a.btn,
 a.btn:hover,
-a.btn:focus {
+a.btn:focus,
+a.btn:visited,
+a.btn:visited:hover {
   text-decoration: none;
 }
 
