@@ -6,6 +6,16 @@ title: Our software
 All of our internally developed software tools have been made open source and are available from <a href="https://github.com/silicos-it/" target="_blank">GitHub</a>. This is a policy that we strictly adhere as we believe that sharing software and technology ultimately leads to higher quality and faster progress in science.
 
 
+### PyPharao
+
+<a href="https://github.com/silicos-it/pypharao" target="_blank">PyPharao</a>is a Python library for 3D pharmacophore representation and screening, implementing the Pharao Gaussian volume-alignment method with RDKit-based feature perception from molecules.
+It lets you build query pharmacophores, align them to database structures, and score hits with Tanimoto/Tversky metrics, including support for exclusion volumes and directional aromatic features. You can easily install with this one-liner:
+
+```sh
+pip install git+https://github.com/silicos-it/PyPharao.git
+```
+
+
 ### Shape-it
 
 <a href="https://github.com/silicos-it/shape-it" target="_blank">Shape-it</a> is the shape-only rewrite of the original <a href="/assets/papers/hdw-pharao-paper.pdf" download target="_blank">Pharao work</a> by Silicos in 2008. It is based on the alignment method described by <a href="https://pubs.acs.org/doi/pdf/10.1021/j100011a016" target="_blank">Grant and Pickup</a>. Shape-it is a shape-based virtual screening method to retrieve molecules with similar shape from different compound libraries. It is widely used and has been cited numerous times.
