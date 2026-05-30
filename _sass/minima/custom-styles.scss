@@ -20,9 +20,10 @@
   --minima-link-base-color: var(--accent);
   --minima-link-visited-color: var(--accent-hover);
   --minima-link-hover-color: var(--accent-hover);
-  --code-bg: #f1f5f9;
-  --pre-bg: #0f172a;
-  --pre-text: #e2e8f0;
+  --code-bg: #e2e8f0;
+  --pre-bg: #f1f5f9;
+  --pre-text: #0f172a;
+  --pre-border: #cbd5e1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -46,6 +47,7 @@
     --code-bg: #21262d;
     --pre-bg: #0d1117;
     --pre-text: #e6edf3;
+    --pre-border: #2a3140;
   }
 }
 
@@ -416,12 +418,27 @@ code {
   font-size: 0.9em;
 }
 
+.highlight,
+.highlight pre,
+pre.highlight {
+  background: var(--pre-bg);
+  border-color: var(--pre-border);
+}
+
 pre {
   background: var(--pre-bg);
   color: var(--pre-text);
   border-radius: 12px;
   padding: 16px;
   overflow: auto;
+}
+
+pre > code,
+.highlight code {
+  background: transparent;
+  color: inherit;
+  border: 0;
+  padding: 0;
 }
 
 /* Footer */
