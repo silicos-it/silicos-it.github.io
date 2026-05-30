@@ -19,7 +19,7 @@ In parallel, all internally developed [software tools](/software) have been rele
 
 ### University of Antwerp
 
-In 2013, Hans was appointed professor of <a href="https://uamcantwerpen.github.io/2040FBDBIC/" target="_blank">Cheminformatics and Computational Drug Design</a> at the University of Antwerp (UA). This marked the beginning of a close and productive collaboration between **Silicos-it** and the university.
+In 2013, Hans was appointed professor of Cheminformatics and Computational Drug Design at the University of Antwerp (UA). This marked the beginning of a close and productive collaboration between **Silicos-it** and the university.
 
 Since then, several new [software tools](/software) have been developed, and the partnership has significantly expanded the range of solutions that **Silicos-it** can offer. In addition to traditional consultancy and fee-for-service projects, we can now engage in government-funded collaborative research initiatives and participate in large-scale computational projects involving exascale supercomputing infrastructures.
 
