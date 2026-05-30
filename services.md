@@ -3,22 +3,21 @@ layout: page
 title: Our services
 ---
 
-**Silicos-it** is a consultancy company that can help you with your computational drug design questions and
-projects. Our specialisation focus lies in four domains:
+**Silicos-it** is a consultancy company specializing in computational drug design. We support research projects across a broad range of computer-aided drug discovery applications, with particular expertise in the following areas:
 
-- [Binding pocket identification](#binding-pocket-identification) using enhanced sampling molecular dynamics.
-- [Structure-based ligand design](#structure-based-ligand-design) using free energy perturbation dynamics or umbrella sampling.
-- [Virtual screening](#virtual-screening) of compound databases with docking or pharmacophore modeling.
-- [Building QSAR models](#building-qsar-models) with advanced machine learning applications.
+- [Binding pocket identification](#binding-pocket-identification) using enhanced-sampling molecular dynamics techniques.
+- [Structure-based ligand design](#structure-based-ligand-design) using free energy perturbation (FEP) and umbrella sampling.
+- [Virtual screening](#virtual-screening) of compound databases through molecular docking and pharmacophore modeling.
+- [Building QSAR models](#building-qsar-models) using advanced machine learning methods.
 
-Have a look at the following examples and feel free to <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">contact us</a> for your particular projects.
+Explore the examples below to discover some of the possibilities, and feel free to <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">contact us</a> to discuss your specific research challenges and projects.
 
 <div class="section-card section-card--media">
 <div class="section-card__body" markdown="1">
 
-### Binding pocket identification
+### Binding Pocket Identification
 
-You have a therapeutic target and a ligand, but you don't know where the ligand is binding on the target? Enhanced sampling dynamics might provide you with a useful solution. In this particular example below, Gaussian accelerated MD was used to identify putative binding spots of a ligand on a protein, taking into account full protein flexibility and solvent effects. Other methods are also possible, but all depends on your particular question. <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">Let's talk about it!</a>
+Do you have a therapeutic target and a ligand, but no clear understanding of where the ligand binds? Enhanced-sampling molecular dynamics techniques can provide valuable insights into potential binding sites and interaction mechanisms. In this particular example, Gaussian accelerated molecular dynamics (GaMD) was used to identify putative ligand-binding pockets on a protein while fully accounting for protein flexibility and solvent effects. Depending on the scientific question, alternative simulation and sampling approaches may also be appropriate.
 
 </div>
 <video src="/assets/movies/pocket-360x240.mp4" width=360 height=240 controls="" autoplay loop preload name="pocket">
@@ -28,9 +27,9 @@ You have a therapeutic target and a ligand, but you don't know where the ligand 
 <div class="section-card section-card--media">
 <div class="section-card__body" markdown="1">
 
-### Structure-based ligand design
+### Structure-Based Ligand Design
 
-Want to optimise a compound using computational methods? Free energy perturbation dynamics or umbrella sampling could help you with that. In the example below, the blue compound is pulled out of the protease protein of SARS-CoV-2, and the forces that are needed to achieve this are a measure of how strong the compound is binding. Or do you have a dimeric protein and you want to find out how strong the complex is? <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">We can help you with that!</a>
+Looking to optimize a compound using computational methods? Advanced simulation techniques such as free energy perturbation (FEP) and umbrella sampling can provide detailed insights into molecular binding and stability. In this example, a ligand (shown in blue) is gradually extracted from the SARS-CoV-2 protease binding pocket. The work required during this process provides a quantitative measure of the ligand’s binding strength. Similar approaches can also be applied to investigate the stability of protein–protein complexes, such as dimeric protein interactions.
 
 </div>
 <video src="/assets/movies/umbrella-360x240.mp4" width=360 height=240 controls="" autoplay loop preload name="umbrella">
@@ -40,9 +39,9 @@ Want to optimise a compound using computational methods? Free energy perturbatio
 <div class="section-card section-card--media">
 <div class="section-card__body" markdown="1">
 
-### Virtual screening
+### Virtual Screening
 
-Often the fastest way to kickstart a drug design project is to identify compounds that are similar to your lead molecule. This method is called virtual screening and we can help you with our <a href="/assets/papers/hdw-pharao-paper.pdf" download target="_blank">Pharao</a> software or open source software tools like AutoDock or Vina. All depends on the information that is available. <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">You can rely on our expertise for advise.</a>
+One of the fastest ways to initiate a drug discovery project is to identify compounds that are structurally or pharmacophorically similar to a known lead molecule. This process, known as virtual screening, enables the rapid exploration of large compound libraries to uncover promising candidate molecules. Depending on the available data and the scientific objectives, we can apply a variety of approaches, including our proprietary **Pharao** methodology, as well as widely used open-source tools such as AutoDock and AutoDock Vina for molecular docking and pharmacophore-based screening.
 
 </div>
 <video src="/assets/movies/pharao-360x240.mp4" width=360 height=240 controls="" autoplay loop preload name="pharao">
@@ -52,9 +51,9 @@ Often the fastest way to kickstart a drug design project is to identify compound
 <div class="section-card">
 <div class="section-card__body" markdown="1">
 
-### Building QSAR models
+### Building QSAR Models
 
-You have huge molecular datasets with relevant pharmacological or physicochemical properties, and you want to build a validated and predictive model from this? <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">Let's sit together and discuss how we can help you in achieving this</a>.
+Do you have large molecular datasets with relevant pharmacological or physicochemical properties? We can help you turn them into robust, validated, and predictive QSAR models. We design and implement advanced machine learning workflows tailored to your specific research objectives. Our expertise covers data curation, descriptor generation, feature selection, model validation, and the development of state-of-the-art predictive models for drug discovery applications.
 
 </div>
 </div>
