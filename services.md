@@ -17,7 +17,7 @@ Explore the examples below to discover some of the possibilities, and feel free 
 
 ### Binding Pocket Identification
 
-Do you have a therapeutic target and a ligand, but no clear understanding of the binding site? Enhanced-sampling molecular dynamics techniques can help identify potential binding pockets and interaction mechanisms. In this example, Gaussian accelerated molecular dynamics (GaMD) was used to detect putative ligand-binding sites while accounting for full protein flexibility and solvent effects.
+Do you have a therapeutic target and a ligand, but no clear understanding of the binding site? Enhanced-sampling molecular dynamics techniques such as Gaussian accelerated MD (GaMD) can help identify potential binding pockets while accounting for protein flexibility and solvent effects.
 
 </div>
 <video src="/assets/movies/pocket-360x240.mp4" width=360 height=240 controls="" autoplay loop preload name="pocket">
@@ -29,7 +29,7 @@ Do you have a therapeutic target and a ligand, but no clear understanding of the
 
 ### Structure-Based Ligand Design
 
-Looking to optimize a compound using computational methods? Techniques such as free energy perturbation (FEP) and umbrella sampling provide detailed insights into molecular binding and stability. In this example, a ligand is gradually extracted from the SARS-CoV-2 protease binding pocket, and the required work serves as a quantitative measure of binding strength. Similar approaches can also be used to study the stability of protein–protein complexes.
+LLooking to optimize a compound computationally? Techniques such as free energy perturbation (FEP) and umbrella sampling provide quantitative insights into molecular binding and protein–protein complex stability.
 
 </div>
 <video src="/assets/movies/umbrella-360x240.mp4" width=360 height=240 controls="" autoplay loop preload name="umbrella">
@@ -41,7 +41,7 @@ Looking to optimize a compound using computational methods? Techniques such as f
 
 ### Virtual Screening
 
-One of the fastest ways to initiate a drug discovery project is through virtual screening, where large compound libraries are searched for molecules similar to a known lead compound. Depending on the available data and project goals, we can apply approaches ranging from our proprietary **Pharao** methodology to widely used open-source tools such as AutoDock and AutoDock Vina.
+Virtual screening is one of the fastest ways to identify compounds similar to a known lead molecule. Depending on the project goals, we apply approaches ranging from our proprietary **Pharao** methodology to open-source tools such as AutoDock and AutoDock Vina.
 
 </div>
 <video src="/assets/movies/pharao-360x240.mp4" width=360 height=240 controls="" autoplay loop preload name="pharao">
