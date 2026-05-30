@@ -17,7 +17,7 @@ Explore the examples below to discover some of the possibilities, and feel free 
 
 ### Binding Pocket Identification
 
-Do you have a therapeutic target and a ligand, but no clear understanding of where the ligand binds? Enhanced-sampling molecular dynamics techniques can provide valuable insights into potential binding sites and interaction mechanisms. In this particular example, Gaussian accelerated molecular dynamics (GaMD) was used to identify putative ligand-binding pockets on a protein while fully accounting for protein flexibility and solvent effects. Depending on the scientific question, alternative simulation and sampling approaches may also be appropriate.
+Do you have a therapeutic target and a ligand, but no clear understanding of the binding site? Enhanced-sampling molecular dynamics techniques can help identify potential binding pockets and interaction mechanisms. In this example, Gaussian accelerated molecular dynamics (GaMD) was used to detect putative ligand-binding sites while accounting for full protein flexibility and solvent effects.
 
 </div>
 <video src="/assets/movies/pocket-360x240.mp4" width=360 height=240 controls="" autoplay loop preload name="pocket">
@@ -29,7 +29,7 @@ Do you have a therapeutic target and a ligand, but no clear understanding of whe
 
 ### Structure-Based Ligand Design
 
-Looking to optimize a compound using computational methods? Advanced simulation techniques such as free energy perturbation (FEP) and umbrella sampling can provide detailed insights into molecular binding and stability. In this example, a ligand (shown in blue) is gradually extracted from the SARS-CoV-2 protease binding pocket. The work required during this process provides a quantitative measure of the ligand’s binding strength. Similar approaches can also be applied to investigate the stability of protein–protein complexes, such as dimeric protein interactions.
+Looking to optimize a compound using computational methods? Techniques such as free energy perturbation (FEP) and umbrella sampling provide detailed insights into molecular binding and stability. In this example, a ligand is gradually extracted from the SARS-CoV-2 protease binding pocket, and the required work serves as a quantitative measure of binding strength. Similar approaches can also be used to study the stability of protein–protein complexes.
 
 </div>
 <video src="/assets/movies/umbrella-360x240.mp4" width=360 height=240 controls="" autoplay loop preload name="umbrella">
@@ -41,7 +41,7 @@ Looking to optimize a compound using computational methods? Advanced simulation 
 
 ### Virtual Screening
 
-One of the fastest ways to initiate a drug discovery project is to identify compounds that are structurally or pharmacophorically similar to a known lead molecule. This process, known as virtual screening, enables the rapid exploration of large compound libraries to uncover promising candidate molecules. Depending on the available data and the scientific objectives, we can apply a variety of approaches, including our proprietary **Pharao** methodology, as well as widely used open-source tools such as AutoDock and AutoDock Vina for molecular docking and pharmacophore-based screening.
+One of the fastest ways to initiate a drug discovery project is through virtual screening, where large compound libraries are searched for molecules similar to a known lead compound. Depending on the available data and project goals, we can apply approaches ranging from our proprietary **Pharao** methodology to widely used open-source tools such as AutoDock and AutoDock Vina.
 
 </div>
 <video src="/assets/movies/pharao-360x240.mp4" width=360 height=240 controls="" autoplay loop preload name="pharao">
@@ -53,7 +53,7 @@ One of the fastest ways to initiate a drug discovery project is to identify comp
 
 ### Building QSAR Models
 
-Do you have large molecular datasets with relevant pharmacological or physicochemical properties? We can help you turn them into robust, validated, and predictive QSAR models. We design and implement advanced machine learning workflows tailored to your specific research objectives. Our expertise covers data curation, descriptor generation, feature selection, model validation, and the development of state-of-the-art predictive models for drug discovery applications.
+Do you have large molecular datasets with relevant pharmacological or physicochemical properties? We can help you transform them into robust and predictive QSAR models using advanced machine learning workflows tailored to your research objectives. Our expertise includes data curation, descriptor generation, feature selection, model validation, and the development of state-of-the-art predictive models for drug discovery.
 
 </div>
 </div>
