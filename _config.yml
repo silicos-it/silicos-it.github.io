@@ -28,7 +28,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Computational drug design services such as molecular dynamics, pharmacophore modeling,
   chemo-informatics.
 
-image: /assets/og-image.svg
+image: /assets/og-image.png
 copyright: © 2010-2026
 
 baseurl: "" # the subpath of your site, e.g. /blog
