@@ -795,6 +795,27 @@ pre > code,
   margin: 0;
 }
 
+.footer-row .social-media-list li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  color: var(--accent);
+}
+
+.footer-row .social-media-list li a:hover,
+.footer-row .social-media-list li a:focus {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  border: 0;
+}
+
+.footer-row .social-media-list .svg-icon {
+  width: 20px;
+  height: 20px;
+}
+
 @media screen and (max-width: 600px) {
   .footer-row {
     grid-template-columns: 1fr;
