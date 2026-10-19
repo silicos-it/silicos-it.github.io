@@ -4,7 +4,23 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+      <svg class="site-title-mark" viewBox="0 0 32 24" width="22" height="16" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="var(--accent)" stroke-width="1.6">
+          <line x1="6" y1="8" x2="18" y2="5"/>
+          <line x1="18" y1="5" x2="24" y2="15"/>
+          <line x1="24" y1="15" x2="11" y2="18"/>
+          <line x1="11" y1="18" x2="6" y2="8"/>
+        </g>
+        <g fill="var(--accent)">
+          <circle cx="6" cy="8" r="2.2"/>
+          <circle cx="18" cy="5" r="2.2"/>
+          <circle cx="24" cy="15" r="2.2"/>
+          <circle cx="11" cy="18" r="2.2"/>
+        </g>
+      </svg>
+      {{ site.title | escape }}
+    </a>
 
     {%- if titles_size > 0 -%}
       <nav class="site-nav">
