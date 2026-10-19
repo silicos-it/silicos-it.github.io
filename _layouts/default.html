@@ -54,11 +54,29 @@
       (function () {
         var btn = document.getElementById('back-to-top');
         if (!btn) return;
+        var row = document.querySelector('.footer-row');
         var threshold = 400;
         var ticking = false;
 
+        // Once the footer scrolls into view, track its row so the button
+        // stays vertically centered against it regardless of how tall the
+        // row is (it stacks taller on narrow screens).
+        function updatePosition() {
+          if (!row) return;
+          var rowRect = row.getBoundingClientRect();
+          var viewportHeight = window.innerHeight;
+          if (rowRect.top < viewportHeight) {
+            var center = (rowRect.top + rowRect.bottom) / 2;
+            var offset = viewportHeight - center - (btn.offsetHeight / 2);
+            btn.style.bottom = Math.max(offset, 0) + 'px';
+          } else {
+            btn.style.bottom = '';
+          }
+        }
+
         function updateVisibility() {
           btn.classList.toggle('is-visible', window.scrollY > threshold);
+          updatePosition();
           ticking = false;
         }
 
@@ -68,6 +86,8 @@
             ticking = true;
           }
         }, { passive: true });
+
+        window.addEventListener('resize', updatePosition);
 
         btn.addEventListener('click', function () {
           var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
