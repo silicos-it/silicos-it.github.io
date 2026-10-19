@@ -767,12 +767,17 @@ pre > code,
 
 .footer-links {
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
 }
 
 .footer-row .contact-list {
   text-align: right;
+}
+
+.footer-row .feed-subscribe {
+  margin: 0;
 }
 
 .footer-row .feed-subscribe a {
