@@ -17,7 +17,7 @@
 
       <p class="contact-list">
         Contact and copyright {{ site.copyright | escape }} <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">{{ site.social.name | escape }}</a>
-        <br>Updated on {{ site.time }}
+        <br>Updated on {{ site.time | date: "%Y-%m-%d %H:%M" }}
       </p>
     </div>
 
