@@ -498,7 +498,7 @@ a.btn:visited:hover {
   padding: 1.25rem 1.5rem;
   margin: 1.5rem 0;
   box-shadow: var(--shadow-sm);
-  transition: transform 150ms ease, box-shadow 200ms ease;
+  transition: border-color 150ms ease, box-shadow 200ms ease;
 }
 
 /* Software page — card grid */
@@ -523,7 +523,7 @@ a.btn:visited:hover {
 }
 
 .section-card:hover {
-  transform: translateY(-2px);
+  border-color: var(--accent);
   box-shadow: var(--shadow-md);
 }
 
@@ -557,11 +557,11 @@ a.btn:visited:hover {
   padding: 18px 20px;
   margin: 0 0 18px;
   box-shadow: var(--shadow-sm);
-  transition: transform 150ms ease, box-shadow 200ms ease;
+  transition: border-color 150ms ease, box-shadow 200ms ease;
 }
 
 .post-list > li:hover {
-  transform: translateY(-2px);
+  border-color: var(--accent);
   box-shadow: var(--shadow-md);
 }
 
