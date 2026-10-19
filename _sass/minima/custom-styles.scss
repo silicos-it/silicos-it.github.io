@@ -399,6 +399,21 @@ a:not(.btn):focus {
   color: var(--text-muted);
 }
 
+@media screen and (max-width: 480px) {
+  .proof-bar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .proof-bar li {
+    padding: 0;
+  }
+
+  .proof-bar li:not(:last-child)::after {
+    content: none;
+  }
+}
+
 /* Buttons */
 .button,
 .btn {
