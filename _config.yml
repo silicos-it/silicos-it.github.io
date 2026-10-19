@@ -57,7 +57,6 @@ minima:
   skin: auto
   social_links:
     - { platform: github,   user_url: "https://github.com/silicos-it" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/company/silicos-it/about/" }
   date_format: "%b %-d, %Y"
    
 
