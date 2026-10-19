@@ -23,6 +23,35 @@
 
     <script>
       (function () {
+        var btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+
+        function isDark() {
+          var explicit = document.documentElement.getAttribute('data-theme');
+          if (explicit) return explicit === 'dark';
+          return window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+
+        function updateLabel() {
+          var next = isDark() ? 'light' : 'dark';
+          var label = 'Switch to ' + next + ' theme';
+          btn.setAttribute('aria-label', label);
+          btn.setAttribute('title', label);
+        }
+
+        btn.addEventListener('click', function () {
+          var next = isDark() ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) {}
+          updateLabel();
+        });
+
+        updateLabel();
+      })();
+    </script>
+
+    <script>
+      (function () {
         var btn = document.getElementById('back-to-top');
         if (!btn) return;
         var threshold = 400;

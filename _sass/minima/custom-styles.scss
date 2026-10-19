@@ -26,29 +26,39 @@
   --pre-border: #cbd5e1;
 }
 
+@mixin dark-theme-vars {
+  --bg: #0f1419;
+  --surface: #1a1f26;
+  --surface-muted: rgba(26, 31, 38, 0.85);
+  --text: #e7ecf3;
+  --text-heading: #f1f5f9;
+  --text-muted: #94a3b8;
+  --accent: #2dd4bf;
+  --accent-hover: #5eead4;
+  --accent-subtle: rgba(45, 212, 191, 0.12);
+  --accent-secondary: #22d3ee;
+  --border: #2a3140;
+  --header-bg: rgba(15, 20, 25, 0.92);
+  --header-gradient-1: rgba(45, 212, 191, 0.1);
+  --header-gradient-2: rgba(34, 211, 238, 0.08);
+  --shadow-sm: 0 6px 18px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 10px 24px rgba(0, 0, 0, 0.35);
+  --code-bg: #21262d;
+  --pre-bg: #0d1117;
+  --pre-text: #e6edf3;
+  --pre-border: #2a3140;
+}
+
+// Follow the system preference, unless the user has manually picked a theme
+// (via the header toggle, persisted to localStorage and applied as data-theme).
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f1419;
-    --surface: #1a1f26;
-    --surface-muted: rgba(26, 31, 38, 0.85);
-    --text: #e7ecf3;
-    --text-heading: #f1f5f9;
-    --text-muted: #94a3b8;
-    --accent: #2dd4bf;
-    --accent-hover: #5eead4;
-    --accent-subtle: rgba(45, 212, 191, 0.12);
-    --accent-secondary: #22d3ee;
-    --border: #2a3140;
-    --header-bg: rgba(15, 20, 25, 0.92);
-    --header-gradient-1: rgba(45, 212, 191, 0.1);
-    --header-gradient-2: rgba(34, 211, 238, 0.08);
-    --shadow-sm: 0 6px 18px rgba(0, 0, 0, 0.25);
-    --shadow-md: 0 10px 24px rgba(0, 0, 0, 0.35);
-    --code-bg: #21262d;
-    --pre-bg: #0d1117;
-    --pre-text: #e6edf3;
-    --pre-border: #2a3140;
+  :root:not([data-theme="light"]) {
+    @include dark-theme-vars;
   }
+}
+
+:root[data-theme="dark"] {
+  @include dark-theme-vars;
 }
 
 /* Base typography + layout */
@@ -229,6 +239,70 @@ a:not(.btn):focus {
   .site-nav .page-link:not(:last-child) {
     margin-right: 0;
   }
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: var(--surface-muted);
+  color: var(--text);
+  cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  background-color: var(--accent-subtle);
+  color: var(--accent);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.theme-toggle .icon-sun,
+.theme-toggle .icon-moon {
+  display: none;
+}
+
+// Light is active (system light, no override, or explicit "light"): show the
+// moon — clicking switches to dark.
+.theme-toggle .icon-moon {
+  display: block;
+}
+
+// Dark is active (system dark with no override, or explicit "dark"): show the
+// sun — clicking switches to light.
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun {
+    display: block;
+  }
+
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon {
+    display: none;
+  }
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-sun {
+  display: block;
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-moon {
+  display: none;
 }
 
 /* Hero (homepage) */
