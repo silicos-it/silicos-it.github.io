@@ -226,12 +226,53 @@ a:not(.btn):focus {
 
 /* Hero (homepage) */
 .home .hero {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 2rem 0 2.5rem;
   margin-bottom: 1.5rem;
+}
+
+.home .hero::before {
+  content: "";
+  position: absolute;
+  inset: -20% -10% 0;
+  background:
+    radial-gradient(60% 80% at 85% 10%, var(--header-gradient-1), transparent 65%),
+    radial-gradient(50% 70% at 10% 90%, var(--header-gradient-2), transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.home .hero-visual {
+  position: absolute;
+  top: -8%;
+  right: -4%;
+  width: 360px;
+  height: 240px;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .home .hero-visual {
+    opacity: 0.22;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home .hero-visual {
+    display: none;
+  }
+}
+
+.home .hero > :not(.hero-visual) {
+  position: relative;
+  z-index: 1;
 }
 
 .home .hero .page-heading,
