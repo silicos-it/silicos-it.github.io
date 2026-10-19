@@ -225,7 +225,10 @@ a:not(.btn):focus {
 }
 
 @media screen and (min-width: 600px) {
-  .site-nav .trigger {
+  // Matches the specificity of minima's `.site-nav input ~ .trigger { display: block; }`
+  // (_layout.scss) so this flex override actually wins the cascade.
+  .site-nav .trigger,
+  .site-nav input ~ .trigger {
     display: flex;
     gap: 4px;
     align-items: center;

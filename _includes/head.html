@@ -14,7 +14,7 @@
   </script>
   {%- seo -%}
   <link rel="icon" type="image/svg+xml" href="{{ "/assets/favicon.svg" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}?v={{ site.time | date: '%s' }}">
   {%- feed_meta -%}
   {%- include custom-head.html -%}
 </head>
