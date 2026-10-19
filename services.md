@@ -29,7 +29,7 @@ Do you have a therapeutic target and a ligand, but no clear understanding of the
 
 ### Structure-Based Ligand Design
 
-LLooking to optimize a compound computationally? Techniques such as free energy perturbation (FEP) and umbrella sampling provide quantitative insights into molecular binding and protein–protein complex stability.
+Looking to optimize a compound computationally? Techniques such as free energy perturbation (FEP) and umbrella sampling provide quantitative insights into molecular binding and protein–protein complex stability.
 
 </div>
 <video src="/assets/movies/umbrella-360x240.mp4" width=360 height=240 controls="" autoplay loop preload name="umbrella">
