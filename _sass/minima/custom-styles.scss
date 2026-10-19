@@ -275,6 +275,53 @@ a:not(.btn):focus {
   z-index: 1;
 }
 
+/* Page header (secondary pages: who are we, services, software) */
+.post-header {
+  position: relative;
+  overflow: hidden;
+  padding: 1.5rem 0 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-header::before {
+  content: "";
+  position: absolute;
+  inset: -40% -10% -10%;
+  background:
+    radial-gradient(60% 90% at 90% 20%, var(--header-gradient-1), transparent 65%),
+    radial-gradient(50% 80% at 20% 100%, var(--header-gradient-2), transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.post-header-visual {
+  position: absolute;
+  top: -20%;
+  right: -2%;
+  width: 220px;
+  height: 130px;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-header-visual {
+    opacity: 0.2;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .post-header-visual {
+    display: none;
+  }
+}
+
+.post-header > :not(.post-header-visual) {
+  position: relative;
+  z-index: 1;
+}
+
 .home .hero .page-heading,
 .home .hero .hero-tagline {
   text-align: center;

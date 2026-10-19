@@ -4,6 +4,22 @@ layout: default
 <article class="post{% if page.page_class %} {{ page.page_class }}{% endif %}">
 
   <header class="post-header">
+    <svg class="post-header-visual" viewBox="0 0 260 150" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="var(--accent)" stroke-width="1.5">
+        <line x1="30" y1="25" x2="110" y2="45"/>
+        <line x1="110" y1="45" x2="160" y2="15"/>
+        <line x1="110" y1="45" x2="130" y2="110"/>
+        <line x1="130" y1="110" x2="55" y2="100"/>
+        <line x1="55" y1="100" x2="30" y2="25"/>
+      </g>
+      <g fill="var(--accent)">
+        <circle cx="30" cy="25" r="4"/>
+        <circle cx="110" cy="45" r="6"/>
+        <circle cx="160" cy="15" r="4"/>
+        <circle cx="130" cy="110" r="5"/>
+        <circle cx="55" cy="100" r="4"/>
+      </g>
+    </svg>
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
 
