@@ -5,6 +5,8 @@ title: Our software
 
 All internally developed software tools are released as open-source software and made available through <a href="https://github.com/silicos-it/" target="_blank">GitHub</a>. This is a principle we strongly believe in and consistently uphold, as we are convinced that openly sharing software and technology leads to higher-quality solutions and accelerates scientific progress.
 
+<div class="software-grid">
+
 <div class="section-card">
 <div class="section-card__body" markdown="1">
 
@@ -67,4 +69,6 @@ pip install git+https://github.com/silicos-it/PyPharao.git
 <a href="https://github.com/UAMCAntwerpen/MoleculeAutoCorrect" target="_blank">MoleculeAutoCorrect</a> is a "spell checker" for molecular graphs. The method uses a virtual library of chemically valid reference molecules to construct a dictionary of allowed chemical features. Input molecules are then analyzed against this dictionary to identify invalid or uncommon structural features. When invalid features are detected, MoleculeAutoCorrect applies controlled structural modifications to generate the closest chemically valid alternative. This approach makes the framework particularly useful for molecular curation, generative chemistry workflows, and the post-processing of AI-generated molecular structures. The method is described in <a href="/assets/papers/autocorrect-paper.pdf" download target="_blank"><i>Journal of Computer-Aided Molecular Design</i> (2024) <b>38</b>, 10</a>.
 
 </div>
+</div>
+
 </div>

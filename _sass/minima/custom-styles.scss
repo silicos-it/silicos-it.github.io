@@ -436,6 +436,26 @@ a.btn:visited:hover {
   transition: transform 150ms ease, box-shadow 200ms ease;
 }
 
+/* Software page — card grid */
+.software-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.software-grid .section-card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .software-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .section-card:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
