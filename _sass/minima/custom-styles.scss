@@ -707,7 +707,7 @@ pre > code,
 /* Back to top */
 #back-to-top {
   position: fixed;
-  right: 24px;
+  left: 50%;
   bottom: 24px;
   width: 44px;
   height: 44px;
@@ -722,7 +722,7 @@ pre > code,
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(8px);
+  transform: translateX(-50%) translateY(8px);
   transition: opacity 200ms ease, transform 200ms ease, background 150ms ease;
   z-index: 50;
 }
@@ -730,7 +730,7 @@ pre > code,
 #back-to-top.is-visible {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(0);
 }
 
 #back-to-top:hover,
