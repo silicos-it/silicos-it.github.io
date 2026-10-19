@@ -232,6 +232,10 @@ a:not(.btn):focus {
 }
 
 /* Hero (homepage) */
+.page-content:has(> .wrapper > .home) {
+  padding-top: 0;
+}
+
 .home .hero {
   position: relative;
   overflow: hidden;
