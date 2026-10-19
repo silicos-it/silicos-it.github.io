@@ -9,6 +9,7 @@ title: Our services
 - [Structure-based ligand design](#structure-based-ligand-design) using free energy perturbation (FEP) and umbrella sampling.
 - [Virtual screening](#virtual-screening) of compound databases through molecular docking and pharmacophore modeling.
 - [Building QSAR models](#building-qsar-models) using advanced machine learning methods.
+- [Cheminformatics tooling](#cheminformatics-tooling) for molecular descriptor generation, drug-likeness scoring, and scaffold/SAR analysis.
 
 Explore the examples below to discover some of the possibilities, and feel free to <a class="u-email" href="mailto:{{ site.social.email | join:',' }}">contact us</a> to discuss your specific research challenges and projects.
 
@@ -54,6 +55,16 @@ Virtual screening is one of the fastest ways to identify compounds similar to a 
 ### Building QSAR Models
 
 Do you have large molecular datasets with relevant pharmacological or physicochemical properties? We can help you transform them into robust and predictive QSAR models using advanced machine learning workflows tailored to your research objectives. Our expertise includes data curation, descriptor generation, feature selection, model validation, and the development of state-of-the-art predictive models for drug discovery.
+
+</div>
+</div>
+
+<div class="section-card">
+<div class="section-card__body" markdown="1">
+
+### Cheminformatics Tooling
+
+Beyond building bespoke QSAR models, we maintain open-source cheminformatics infrastructure for the full machine learning pipeline, built on top of the <a href="https://www.rdkit.org" target="_blank">RDKit</a> toolkit — molecular descriptor generation (**Spectrophore**), drug-likeness scoring (**QED**, published in *Nature Chemistry*), and scaffold/SAR analysis (**strip-it**) — giving our models a solid, reproducible data foundation.
 
 </div>
 </div>
