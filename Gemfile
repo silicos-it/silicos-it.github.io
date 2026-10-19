@@ -13,6 +13,10 @@ gem "webrick"
 # ffi 1.15.x fails to compile on recent macOS; pin a compatible release for local builds.
 gem "ffi", ">= 1.17"
 
+# Ruby 3.3's bundled logger gem breaks Jekyll 3.9.2's LogAdapter (undefined method `[]' for nil
+# in Logger#level); pin an older logger for local builds.
+gem "logger", "~> 1.5.3"
+
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 #gem "jekyll", "~> 4.3.1"
 #gem "minima", "~> 2.5"
