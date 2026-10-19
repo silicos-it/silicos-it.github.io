@@ -15,12 +15,6 @@
 
     {%- include footer.html -%}
 
-    <button id="back-to-top" aria-label="Back to top" title="Back to top">
-      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
-        <path d="M12 5l-7 7h4v7h6v-7h4z" fill="currentColor"/>
-      </svg>
-    </button>
-
     <script>
       (function () {
         var btn = document.getElementById('theme-toggle');
@@ -47,54 +41,6 @@
         });
 
         updateLabel();
-      })();
-    </script>
-
-    <script>
-      (function () {
-        var btn = document.getElementById('back-to-top');
-        if (!btn) return;
-        var row = document.querySelector('.footer-row');
-        var threshold = 400;
-        var ticking = false;
-
-        // Once the footer scrolls into view, track its row so the button
-        // stays vertically centered against it regardless of how tall the
-        // row is (it stacks taller on narrow screens).
-        function updatePosition() {
-          if (!row) return;
-          var rowRect = row.getBoundingClientRect();
-          var viewportHeight = window.innerHeight;
-          if (rowRect.top < viewportHeight) {
-            var center = (rowRect.top + rowRect.bottom) / 2;
-            var offset = viewportHeight - center - (btn.offsetHeight / 2);
-            btn.style.bottom = Math.max(offset, 0) + 'px';
-          } else {
-            btn.style.bottom = '';
-          }
-        }
-
-        function updateVisibility() {
-          btn.classList.toggle('is-visible', window.scrollY > threshold);
-          updatePosition();
-          ticking = false;
-        }
-
-        window.addEventListener('scroll', function () {
-          if (!ticking) {
-            window.requestAnimationFrame(updateVisibility);
-            ticking = true;
-          }
-        }, { passive: true });
-
-        window.addEventListener('resize', updatePosition);
-
-        btn.addEventListener('click', function () {
-          var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-          window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
-        });
-
-        updateVisibility();
       })();
     </script>
 
