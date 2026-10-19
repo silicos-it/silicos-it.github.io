@@ -28,8 +28,16 @@ description: >- # this means to ignore newlines until "baseurl:"
   Computational drug design services such as molecular dynamics, pharmacophore modeling,
   chemo-informatics.
 
-image: /assets/og-image.png
 copyright: © 2010-2026
+
+# jekyll-seo-tag only reads `image` from a page/post's own front matter, not
+# from this top-level key, so a default is injected into every page/post here.
+# A post can still override it by setting its own `image:` in front matter.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/og-image.png
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.silicos-it.be" # the base hostname & protocol for your site, e.g. http://example.com
