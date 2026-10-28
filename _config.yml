@@ -72,6 +72,7 @@ header_pages:
 - services.md
 - software.md
 - posts.md
+- contact.md
 
 # Blog posts
 show_excerpts: true
